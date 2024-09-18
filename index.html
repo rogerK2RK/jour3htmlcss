@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>MonSite</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo of the site web">
+        <nav>
+            <a href="">Home</a>
+            <a href="">A propos</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flx-ctr">
+            <section>
+                <h1>Formulaire d'inscription</h1>
+                <form action="submit" method="GEt">
+                    <!-- Genre -->
+                    <p class="labelcheck">Genre :</p>
+                    <div class="box-checkbox">
+                    <input type="radio" name="genre" id="genre1" value="Homme">
+                    <label for="genre1" >Homme</label>
+    
+                    <input type="radio" name="genre" id="genre2" value="Femme">
+                    <label for="genre2" >Femme</label>
+    
+                    <input type="radio" name="genre" id="genre3" value="Autres">
+                    <label for="genre3" >Autres</label>
+                    </div><br>
+    
+                    <div class="flx-bx">
+                        <div>
+                            <!-- Nom -->
+                            <label class="txt-wght-bg" for="nom">Nom : </label>
+                            <input type="text" id="nom" name="nom" placeholder="Dupont">
+                        </div>
+                        
+                        <div>
+                            <!-- Prénom -->
+                            <label class="txt-wght-bg" for="prenom">Prénom : </label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Jean">
+                        </div>
+                    </div> <br>
+    
+                    <div class="flx-bx">
+                        <div>
+                             <!-- Mail -->
+                            <label class="txt-wght-bg" for="email">Adresse email : </label>
+                            <input type="email" id="email" name="email" placeholder="jean.dupont@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                            
+                        <div>
+                            <!-- Pays -->
+                            <label class="txt-wght-bg" for="pays">Pays :</label>
+                            <select id="pays" name="pays" >
+                                <option value="france">France</option>
+                                <option value="belgique">Belgique</option>
+                                <option value="suisse">Suisse</option>
+                                <option value="canada">Canada</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div> <br>
+    
+                    <div class="flx-bx">
+                        <div>
+                            <!-- Date de naissance -->
+                            <label class="txt-wght-bg" for="date_naissance">Date de naissance : </label>
+                            <input type="date" id="date_naissance" name="date_naissance" required>
+                        </div>
+                            
+                        <div>
+                            <!-- Telephone -->
+                            <label class="txt-wght-bg" for="telephone">Numéro de téléphone : </label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="0123456789" pattern="[0-9]{10}"  >
+                        </div>
+                    </div> <br>
+    
+                    <!-- Status -->
+                    <p class="labelcheck">Quel est votre statut ?</p>
+                     <div class="box-checkbox">
+                        <input type="radio" name="statut" id="statut1" value="Etudiant">
+                        <label for="statut1" >Etudiant</label>
+    
+                        <input type="radio" name="statut" id="statut2" value="Travailleur">
+                        <label for="statut2" >Travailleur</label>
+    
+                        <input type="radio" name="statut" id="statut3" value="Sans Travail">
+                        <label for="statut3" >Sans Travail</label>
+    
+                        <input type="radio" name="statut" id="statut4" value="Autres">
+                        <label for="statut4" >Autres</label>
+                     </div><br>
+    
+                    <!-- Règlement du site -->
+                    <div class="flx-strt">
+                        <input type="checkbox" id="reglement" name="reglement" required>
+                        <label for="reglement">J'accepte les <a href="#">règles du site</a></label>
+                    </div><br>
+                    
+    
+                    <!-- Abonnement à la newsletter -->
+                    <div class="flx-strt">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Je souhaite m'abonner à la newsletter</label>
+                    </div><br>
+    
+                    <!-- Bouton de soumission -->
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+            <div class="box-img">
+                <img src="img/astro.png" alt="image d'un astronaute">
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <address>
+            <p>Mon site, 11 rue Lourmel, 75016 Paris, France</p>
+            <p>Email : <a href="mailto:contact@monsite.com">contact@monsite.com</a></p>
+        </address>
+        <p>© 2024 MonSite by Roro.</p>
+    </footer>
+</body>
+</html>
