@@ -101,6 +101,10 @@ select  {
   font-size: 1rem;
 }
 
+input:required:invalid {
+  border-color: red;
+}
+
 .flx-bx {
   display: flex;
   justify-content: space-between;
